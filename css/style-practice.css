@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* ########### UTILITY CLASSES ######### */
+/* h1,h2,h3{
+    margin: 0.8em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+} */
+.container{
+    /* margin: 0 12vw; */
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 0.2rem solid red;
+}
+.red{
+    color: rgb(231, 84, 84);
+}
+.bg-dark{
+    background-color: rgb(73, 72, 72);
+}
+.sblack{
+    color: black;
+}
+hr{
+    border: 0.2rem solid rgb(231, 84, 84);
+    margin-bottom: 1rem;
+}
+fw-600{
+    font-weight: 600;
+}
+/* ############################################# */
+.header{
+    height: 90rem;
+    background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)) , url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* text-transform: uppercase; */
+    /* position: relative; */
+}
+.navbar{
+    border: 0.2rem solid yellow;
+    padding: 2rem 0;
+}
+.logo{
+    border: 0.2rem solid green;
+    float: left;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+}
+.navbar .nav-items{
+    border: 0.2rem solid red;
+    float: right;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container .navbar li{
+    display: inline-block;
+}
+.nav-items a{
+    color: white;
+    list-style: none;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: 0.2rem solid white; 
+    margin: 0.5em 0.7em;  
+}
+.nav-items a:hover{
+    border-bottom: 0.3rem solid white;
+}
+.container .box1{
+    border: 0.2rem solid red;
+    text-transform: uppercase; 
+    text-align: center;
+    margin: 33em auto;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+.container .box1 h1{
+    font-size: 3rem;
+    margin-bottom: 0.7em;
+    letter-spacing: 0.2rem;   
+}
+.container .box1 p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    /* word-spacing: 0.1rem; */
+}
+.container .box1 a{
+    text-decoration: none;
+    color:  rgb(231, 84, 84);
+    background: white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 0.5em 0.8em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1em;
+    letter-spacing: 0.2rem;
+}
+
+/* ############ SECTION.SHOWCASE ######### */
+
+.showcase{
+    background: #dddddd;
+    padding: 8rem 0;
+}
+.row{
+    height: 350px;
+    border: 0.2rem solid yellow;
+    margin: 8rem 0;
+    box-shadow: 0px 0px 20px 0px #aaaaaa;
+}
+.row .text{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: rgb(37, 36, 36);
+}
+.row .text h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.row .img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.text2,.img1{
+    width: 50%;
+    float: right;
+    border: 0.2rem solid red;
+    height: 100%;
+}
+.text1,.img2{
+    width: 50%;
+    float: right;
+    border: 0.2rem solid red;
+    height: 100%;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row .text a{
+    color:  rgb(231, 84, 84);
+    border: 0.2rem solid rgb(209, 58, 58);
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 0.6rem 2rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin-top: 1.3rem;
+
+}
+/* ######### FOOTER ####### */
+section.page3{
+    padding: 8rem 0;
+}
+.page3 .c{
+    border: 0.2rem solid red;
+    width: 33.3333%;
+    float: left;
+    box-shadow: 5px 5px 20px 0px #aaaaaa0a;
+}
+.page3 .container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.c{
+    height: 225px;
+    border: 0.2rem solid yellow;
+    margin: 8rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1.5rem 1.2rem;
+}
+.c1,.c3{
+    background: rgb(78, 77, 77);
+    /*  background: #333333 */
+}
+.c2{
+    background:  rgb(231, 84, 84);
+}
+.page3 .container .c h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+/* ################### FOOTER ########### */
+.footer{
+    padding: 4rem 0;
+    background: rgb(73, 72, 72);
+}
+.footer .container{
+    text-align: center; 
+    font-size: 1.4rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+.end-text h3,.end-text p{
+    display: inline;
+    border: 0.2rem solid red;
+}
+.icon{
+    border: 0.2rem solid red;
+    margin-bottom: 1.5rem;
+    word-spacing: 2rem;
+}
+/* ##########  ABOUT PAGE   ############ */
+.abt-nav{
+    margin-bottom: 7rem;
+}
+.abt-sec .container{
+    background: white;
+}
+.abt-sec .abt-us{
+    color: black;
+}
+.abt-sec h1{
+    font-size: 3.5rem;
+    padding: 0.4rem 0;
+    color:  rgb(231, 84, 84);
+}
+.abt-sec p,.abt-sec ul{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.11rem;
+    word-spacing: 0.1rem;
+}
+.abt-sec ul li{
+    margin: 0.4rem 0;
+}
+.abt-wrapper{
+    border: 0.2rem solid red;
+    text-align: center;
+    margin: 5rem 0;
+}
+.left{
+    float: left;
+    border: 0.2rem solid red;
+    list-style: none;
+    width: 50%;
+}
+.right{
+    float: right;
+    border: 0.2rem solid red;
+    list-style: none;
+    width: 50%;
+}
+.abt-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.abt-wrapper li::before{
+    content: '\2713';
+    color:  rgb(231, 84, 84);
+    font-weight: bold;
+    padding: 0.9rem 1.4rem;
+}
+/* ################# */
+.counts{
+    border: 0.2rem solid blue;
+    text-align: center;
+    margin: 5.5rem 0;
+}
+.cont{
+    width: 25%;
+    float: left;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ####################### */
+.abt-foot .white{
+    color: white;
+    border: 0.3rem solid white;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+.abt-foot{
+    border: 0.2rem solid green;
+    background:  rgb(231, 84, 84);
+    color: white;
+    padding: 1.3rem 0;
+}
+.abt-foot::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.abt-foot .left {
+    width: 60%;
+    word-spacing: 0.1rem;
+    letter-spacing: 00.1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.abt-foot .right{
+    width: 40%;
+    word-spacing: 0.1rem;
+    letter-spacing: 00.1rem;
+}
+/* ########### CONTACT PAGE ############ */
+.gray{
+    background: lightgray;
+}
+.rt,.lt{
+    width: 46%;
+    float: right;
+    border: 0.1rem solid red;
+    background: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
+    padding: 3rem 0.7rem;
+    height: 70rem;
+}
+
+.lt{
+    width: 46%;
+    float: left;
+    border: 0.1rem solid red;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+input,textarea{
+    width: 100%;
+    padding: 0.8rem 0;
+    margin: 0.7rem 0;
+}
+label{
+    font-size: 1.9rem;
+}
+.submit{
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;    
+    background: rgb(231, 84, 84);
+    color: white;
+    margin-left: 25%;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+.loc-text,.email-text,.call-text{
+    display: inline;
+    margin-left: 0.5rem;
+}
+.company-add p{
+    margin: 0.75rem auto 3.5rem 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.company-add img{
+    max-width: 100%;
+    min-height: 38rem;
+    height: 13rem;
+    object-position: right;
+    object-fit: cover;
+}
+
+/* ##############  MEDIA-QUERIES ############ */
+@media (max-width:500px) and (max-height:900px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items,.navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .text,.row .img{
+        float: none;
+        width: 100%;
+        text-align: center;     
+    }
+    .page3 .container .c{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .page3 .c2,.page3 .c3{
+        margin-top: 6rem;
+    }
+    .abt-foot .left,.abt-foot .right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .lt,.form-wrapper .rt{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .form-wrapper .rt{
+        margin-bottom: 6rem;
+    }
+
+}
